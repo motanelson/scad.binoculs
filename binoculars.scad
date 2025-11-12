@@ -62,8 +62,8 @@ module tubo_binoculo(deslocamento_x) {
 module barra_conexao() {
     // Barra principal
     color("Yellow")
-    translate([-largura_barra/2, raio_externo - 2.5, espaco_nariz])
-    cube([largura_barra, espessura_barra, comprimento_total - 2 * espaco_nariz]);
+    translate([-(largura_barra*1.1)/2, raio_externo - 2.5, espaco_nariz])
+    cube([largura_barra*1.1, espessura_barra, comprimento_total - 2 * espaco_nariz]);
     color("Yellow")
     // Reforços laterais
     for(x = [-largura_barra/2, largura_barra/2 - 5]) {
